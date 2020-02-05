@@ -14,7 +14,7 @@ const NavBar = props => {
   const classes = useStyles();
   
   return (
-    <AppBar style={{ display: 'flex'}}>
+    <AppBar position='static' style={{ display: 'flex'}}>
       <Container style={{ alignSelf: 'flex-end', width: 'auto', margin: '0.5rem' }}>
         <GitHub className={classes.icon} />
         <LinkedIn className={classes.icon} />
