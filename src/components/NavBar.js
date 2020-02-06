@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
     padding: '0.5rem',
     width: '2.8rem'
   },
-  icon2: {
+  link: {
     cursor: 'pointer'
   },
   appBar: {
@@ -34,8 +34,8 @@ const NavBar = props => {
     <AppBar className={classes.appBar} position='static'>
       <Dev className={classes.icon} />
       <Container className={classes.linkContainer}>
-        <GitHub className={`${classes.icon} + ${classes.icon2}`} />
-        <LinkedIn className={`${classes.icon} + ${classes.icon2}`} />
+        <GitHub className={`${classes.icon} + ${classes.link}`} />
+        <LinkedIn className={`${classes.icon} + ${classes.link}`} />
       </Container>
     </AppBar>
   );
