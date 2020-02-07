@@ -34,8 +34,12 @@ const NavBar = props => {
     <AppBar className={classes.appBar} position='static'>
       <Dev className={classes.icon} />
       <Container className={classes.linkContainer}>
-        <GitHub className={`${classes.icon} + ${classes.link}`} />
-        <LinkedIn className={`${classes.icon} + ${classes.link}`} />
+        <a href='https://github.com/AceIsHuman' target='_blank' rel="noopener noreferrer">
+          <GitHub className={`${classes.icon} + ${classes.link}`} />
+        </a>
+        <a href='https://www.linkedin.com/in/aciel-ochoa' target='_blank' rel="noopener noreferrer">
+          <LinkedIn className={`${classes.icon} + ${classes.link}`} />
+        </a>
       </Container>
     </AppBar>
   );
