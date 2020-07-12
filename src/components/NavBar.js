@@ -31,7 +31,7 @@ const NavBar = props => {
   const classes = useStyles();
 
   return (
-    <AppBar position="static">
+    <AppBar position="fixed" style={{ opacity: '0.95'}}>
       <Container className={classes.appBar}>
         <Dev className={classes.icon} />
         <Container className={classes.linkContainer}>
