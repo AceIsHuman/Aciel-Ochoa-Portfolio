@@ -10,9 +10,18 @@ function Project(props) {
       <InfoContainer>
         <Title>{name}</Title>
         <Description>{description}</Description>
-        <ViewLive href={deploy_url} target="_blank" rel="noopener noreferrer">
-          <span>See it live</span>
-        </ViewLive>
+        <Links>
+          <ViewLive href={deploy_url} target="_blank" rel="noopener noreferrer">
+            <span>See it live</span>
+          </ViewLive>
+          <ViewGitHub
+            href={github_url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>View on GitHub</span>
+          </ViewGitHub>
+        </Links>
       </InfoContainer>
       <Image src={image} alt={image_alt} />
     </ProjectContainer>
@@ -43,15 +52,34 @@ const Title = styled('h3')({
 const Description = styled('p')({
   color: '#DDDDDD',
 });
+const Links = styled('div')({
+  display: 'flex',
+  justifyContent: 'flex-end',
+  fontSize: '1rem',
+  textShadow: 'none',
+  fontWeight: '600',
+});
 const ViewLive = styled('a')({
   padding: '0.25rem 0.5rem',
   backgroundColor: '#CCCCCC',
   borderRadius: '0.2rem',
   color: '#0C0C0C',
   textDecoration: 'none',
-  fontSize: '1rem',
-  textShadow: 'none',
-  fontWeight: '6`00',
   boxShadow: '0 0.1rem 0 black',
+  '&&:hover': {
+    backgroundColor: '#AAAAAA',
+  },
+});
+const ViewGitHub = styled('a')({
+  padding: '0.25rem 0.5rem',
+  backgroundColor: 'rgb(48, 161, 78);',
+  borderRadius: '0.2rem',
+  color: '#FFFFFF',
+  textDecoration: 'none',
+  boxShadow: '0 0.1rem 0 black',
+  marginLeft: '1rem',
+  '&&:hover': {
+    backgroundColor: 'rgb(28, 141, 58)',
+  },
 });
 export default Project;
