@@ -4,7 +4,19 @@ import { styled } from '@material-ui/core/styles';
 function Project(props) {
   const {
     project: { name, deploy_url, github_url, description, image, image_alt },
+    reversed,
   } = props;
+
+  const ProjectContainer = styled('div')({
+    display: 'flex',
+    justifyContent: 'space-around',
+    background: '#3f51b5',
+    boxShadow: '0 0.2rem 0.3rem black',
+    padding: '1rem',
+    marginBottom: '1rem',
+    flexDirection: reversed ? 'row-reverse' : 'row',
+  });
+
   return (
     <ProjectContainer>
       <InfoContainer>
@@ -27,14 +39,6 @@ function Project(props) {
     </ProjectContainer>
   );
 }
-
-const ProjectContainer = styled('div')({
-  display: 'flex',
-  justifyContent: 'space-around',
-  background: '#3f51b5',
-  boxShadow: '0 0.2rem 0.3rem black',
-  padding: '1rem',
-});
 
 const InfoContainer = styled('div')({
   width: '40%',
