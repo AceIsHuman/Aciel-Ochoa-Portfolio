@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box } from '@material-ui/core';
-import { hivestack } from './project_info';
+import { hivestack, gameOfLife } from './project_info';
 import Project from './Project';
 
 function Projects() {
@@ -9,6 +9,7 @@ function Projects() {
       <h2>Projects</h2>
       <div>
         <Project project={hivestack} />
+        <Project project={gameOfLife} reversed />
       </div>
     </Box>
   );
