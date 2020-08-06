@@ -48,6 +48,7 @@ const InfoContainer = styled('div')({
 const Image = styled('img')({
   width: '40%',
   height: 'auto',
+  objectFit: 'contain',
 });
 const Title = styled('h3')({
   fontSize: '2rem',
