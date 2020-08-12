@@ -43,7 +43,7 @@ function Project(props) {
 const InfoContainer = styled('div')({
   width: '40%',
   paddingRight: '1rem',
-  textShadow: '0 0.1rem 0 black',
+  textShadow: '0 0.1rem 0.3rem black',
 });
 const Image = styled('img')({
   width: '40%',
@@ -56,6 +56,7 @@ const Title = styled('h3')({
 });
 const Description = styled('p')({
   color: '#DDDDDD',
+  fontSize: '1.2rem',
 });
 const Links = styled('div')({
   display: 'flex',
