@@ -5,11 +5,11 @@ import Project from './Project';
 
 function Projects() {
   return (
-    <Box>
+    <Box style={{marginBottom: '2rem'}}>
       <h2>Projects</h2>
       <div>
-        <Project project={hivestack} />
-        <Project project={gameOfLife} reversed />
+        <Project project={gameOfLife} />
+        <Project project={hivestack} reversed/>
       </div>
     </Box>
   );
