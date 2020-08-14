@@ -3,24 +3,22 @@ import { styled, TextField, Button } from '@material-ui/core';
 
 function ContactForm() {
   return (
-    <FormContainer name="contact" data-netlify="true">
+    <FormContainer name="contact" method="post">
+      <input type="hidden" name="form-name" value="contact" />
       <TextField
         required
-        id="contact-name"
         name="contact-name"
         type="text"
         label="Your Name"
       />
       <TextField
         required
-        id="constact-email"
         name="constact-email"
         type="email"
         label="Email Address"
       />
       <TextField
         required
-        id="message"
         name="message"
         label="Message"
         multiline
