@@ -13,7 +13,7 @@ function ContactForm() {
       />
       <TextField
         required
-        name="constact-email"
+        name="contact-email"
         type="email"
         label="Email Address"
       />
