@@ -12,10 +12,8 @@ function App() {
     <Box>
       <NavBar />
       <Header />
-      <Container>
-        <About />
-        <Projects />
-      </Container>
+      <About />
+      <Projects />
       <Contact />
       <Footer />
     </Box>

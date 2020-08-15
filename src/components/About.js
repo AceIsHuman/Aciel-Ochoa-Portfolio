@@ -1,10 +1,10 @@
 import React from 'react';
-import { Box } from '@material-ui/core';
+import { Container } from '@material-ui/core';
 import { styled } from '@material-ui/core/styles';
 
 function About() {
   return (
-    <Box style={{ margin: '5rem auto', textAlign: 'center' }}>
+    <Container style={{ margin: '5rem auto', textAlign: 'center' }}>
       <h2>Who am I?</h2>
       <Divider />
       <Description>
@@ -19,7 +19,7 @@ function About() {
         aspects of web applications, I am positive I can help you with your
         application needs.
       </Description>
-    </Box>
+    </Container>
   );
 }
 
