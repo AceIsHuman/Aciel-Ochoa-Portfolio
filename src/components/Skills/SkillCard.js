@@ -15,6 +15,7 @@ const Container = styled(Grid)({
   maxWidth: 'fit-content',
   margin: '0.2rem',
   borderRadius: '0.2rem',
+  fontSize: '1.2rem',
 });
 
 export default SkillCard;
