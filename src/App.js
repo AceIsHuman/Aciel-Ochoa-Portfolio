@@ -1,11 +1,12 @@
 import React from 'react';
-import { Container, Box } from '@material-ui/core';
+import { Box } from '@material-ui/core';
 import NavBar from './components/NavBar';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Projects from './components/Projects/';
 import About from './components/About';
 import Contact from './components/Contact/';
+import Skills from './components/Skills/';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <NavBar />
       <Header />
       <About />
+      <Skills />
       <Projects />
       <Contact />
       <Footer />
