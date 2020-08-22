@@ -36,7 +36,7 @@ function ContactForm() {
   );
 }
 
-const FormContainer = styled('form')({
+const FormContainer = styled('form')(({theme}) => ({
   width: '70%',
   padding: '2rem 1rem',
   display: 'flex',
@@ -44,6 +44,9 @@ const FormContainer = styled('form')({
   background: 'white',
   boxShadow: '0 0.2rem 0.3rem rgba(0, 0, 0, 0.5)',
   borderRadius: '0.5rem',
-});
+  [theme.breakpoints.down('sm')]: {
+    width: '90%',
+  }
+}));
 
 export default ContactForm;

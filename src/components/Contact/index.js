@@ -28,10 +28,14 @@ const Background = styled('div')({
   padding: '1rem 0',
 });
 
-const Content = styled('div')({
+const Content = styled('div')(({ theme }) => ({
   display: 'flex',
   justifyContent: 'space-around',
-});
+  [theme.breakpoints.down('md')]: {
+    flexDirection: 'column',
+    alignItems: 'center',
+  }
+}));
 
 const Divider = styled('hr')({
   borderTop: '.2rem solid #3f51b5',
