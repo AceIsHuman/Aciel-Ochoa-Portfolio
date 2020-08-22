@@ -7,7 +7,7 @@ function Project(props) {
     reversed,
   } = props;
 
-  const ProjectContainer = styled('div')({
+  const ProjectContainer = styled('div')(({ theme }) => ({
     display: 'flex',
     justifyContent: 'space-around',
     background: '#3f51b5',
@@ -15,7 +15,11 @@ function Project(props) {
     padding: '1rem',
     marginBottom: '1rem',
     flexDirection: reversed ? 'row-reverse' : 'row',
-  });
+    [theme.breakpoints.down('sm')]: {
+      flexDirection: 'column',
+      alignItems: 'center',
+    },
+  }));
 
   return (
     <ProjectContainer>
@@ -40,20 +44,35 @@ function Project(props) {
   );
 }
 
-const InfoContainer = styled('div')({
+const InfoContainer = styled('div')(({ theme }) => ({
   width: '40%',
   paddingRight: '1rem',
   textShadow: '0 0.1rem 0.3rem black',
-});
-const Image = styled('img')({
+  [theme.breakpoints.down('sm')]: {
+    flexDirection: 'column',
+    width: '100%',
+    paddingRight: '0',
+    marginBottom: '0.5rem',
+  },
+}));
+const Image = styled('img')(({ theme }) => ({
   width: '40%',
   height: 'auto',
   objectFit: 'contain',
-});
-const Title = styled('h3')({
+  [theme.breakpoints.down('sm')]: {
+    width: '75%',
+  },
+  [theme.breakpoints.down('xs')]: {
+    width: '100%',
+  },
+}));
+const Title = styled('h3')(({ theme }) => ({
   fontSize: '2rem',
   color: '#FFFFFF',
-});
+  [theme.breakpoints.down('xs')]: {
+    marginBottom: '0',
+  }
+}));
 const Description = styled('p')({
   color: '#DDDDDD',
   fontSize: '1.2rem',
