@@ -30,13 +30,16 @@ const Divider = styled('hr')({
   marginBottom: '2rem',
 });
 
-const Description = styled('p')({
+const Description = styled('p')(({theme}) => ({
   fontFamily: "'Recursive', sans-serif",
   boxSizing: 'border-box',
   width: '80%',
   fontSize: '1.2rem',
   margin: '0 auto',
   padding: '0.75rem',
-});
+  [theme.breakpoints.down('sm')]: {
+    width: '100%',
+  }
+}));
 
 export default About;
