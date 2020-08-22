@@ -1,6 +1,7 @@
 import hivestack_image from '../../assets/projects/hivestack.gif';
 import gameOfLife_image from '../../assets/projects/gameoflife.gif';
-import dadjokes_image from '../../assets/projects/dadjokes.gif';
+import dadJokes_image from '../../assets/projects/dadjokes.gif';
+import macroCalculator_image from '../../assets/projects/macrocalculator.gif';
 
 export const hivestack = {
   name: 'Hive Stack',
@@ -26,6 +27,15 @@ export const dadJokes = {
   deploy_url: 'https://front-end.build-week-pt-dad-jokes.now.sh/',
   github_url: 'https://github.com/Build-Week-PT-Dad-Jokes/Front-End',
   description: `Dad Jokes gives users a single location to view and share jokes in a simple manner. Dads can create an account to post new jokes for all to see, or even construct a private stockpile of jokes. The best part is, you don't need an account to view all the hilarious banter! Built using the ReactJS framework with react-router, formik with yup to handle forms with validation, and redux with redux-thunk to handle asynchronous state changes.`,
-  image: dadjokes_image,
+  image: dadJokes_image,
   image_alt: 'dad-jokes-gif',
+};
+
+export const macroCalculator = {
+  name: 'Macro Calculator Landing Page',
+  deploy_url: 'https://bw-macro-calculator.github.io/bw-macro-calculator/',
+  github_url: 'https://github.com/AceIsHuman/bw-macro-calculator',
+  description: `As a responsive marketing website for an app called Macro Calculator, this project demonstrates mastery of web fundamental skills in HTML, CSS, and JavaScript. By using semantic HTML with LESS and JavaScrip, we were able to create components that manipulate the DOM upon user interaction. This includes hover effects on images, a drop-down navigation menu for mobile views, a customer testimonial carousel, and more.`,
+  image: macroCalculator_image,
+  image_alt: 'macro-calculator-gif',
 };
