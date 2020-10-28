@@ -16,7 +16,7 @@ function About() {
         applications in ReactJS. I have worked on everything from styling,
         building forms, creating reusable components, handling HTTP requests,
         and even building them on the back-end server. Contributing to all
-        aspects of web applications, I am positive I can help you with your
+        aspects of the web development process, I am ready to help you with your
         application needs.
       </Description>
     </Container>
@@ -30,7 +30,7 @@ const Divider = styled('hr')({
   marginBottom: '2rem',
 });
 
-const Description = styled('p')(({theme}) => ({
+const Description = styled('p')(({ theme }) => ({
   fontFamily: "'Recursive', sans-serif",
   boxSizing: 'border-box',
   width: '80%',
@@ -39,7 +39,7 @@ const Description = styled('p')(({theme}) => ({
   padding: '0.75rem',
   [theme.breakpoints.down('sm')]: {
     width: '100%',
-  }
+  },
 }));
 
 export default About;
