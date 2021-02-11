@@ -1,5 +1,6 @@
 import React from 'react';
-import { styled } from '@material-ui/core';
+import { styled, Container } from '@material-ui/core';
+
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
   )
 };
 
-const FooterContainer = styled('footer')({
+const FooterContainer = styled(Container)({
   padding: '1rem',
 })
 
