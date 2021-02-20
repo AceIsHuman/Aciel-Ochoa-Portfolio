@@ -4,7 +4,10 @@ import { styled } from '@material-ui/core/styles';
 
 function About() {
   return (
-    <Container style={{ margin: '5rem auto', textAlign: 'center' }}>
+    <Container
+      maxWidth="md"
+      style={{ margin: '5rem auto', textAlign: 'center' }}
+    >
       <h2>Who am I?</h2>
       <Divider />
       <Description>
@@ -24,16 +27,14 @@ function About() {
 }
 
 const Divider = styled('hr')({
-  borderTop: '.2rem solid #3f51b5',
-  borderRadius: '.2rem',
-  width: '80%',
+  borderTop: '0.2rem solid #3f51b5',
+  borderRadius: '0.2rem',
   marginBottom: '2rem',
 });
 
 const Description = styled('p')(({ theme }) => ({
   fontFamily: "'Recursive', sans-serif",
   boxSizing: 'border-box',
-  width: '80%',
   fontSize: '1.2rem',
   margin: '0 auto',
   padding: '0.75rem',
