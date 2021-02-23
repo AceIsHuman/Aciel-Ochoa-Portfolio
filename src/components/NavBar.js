@@ -36,10 +36,10 @@ const NavBar = props => {
       <Container className={classes.appBar}>
         <Dev className={classes.icon} />
         <Container className={classes.linkContainer}>
-          <Link src="https://github.com/AceIsHuman" newTab>
+          <Link to="https://github.com/AceIsHuman" newTab>
             <GitHub className={`${classes.icon} + ${classes.link}`} />
           </Link>
-          <Link src="https://www.linkedin.com/in/aciel-ochoa" newTab>
+          <Link to="https://www.linkedin.com/in/aciel-ochoa" newTab>
             <LinkedIn className={`${classes.icon} + ${classes.link}`} />
           </Link>
         </Container>

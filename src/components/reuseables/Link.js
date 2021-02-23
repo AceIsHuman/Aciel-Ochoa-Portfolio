@@ -4,7 +4,7 @@ const Link = props => {
   return (
     <a
       style={props.style}
-      href={props.src}
+      href={props.to}
       target={props.newTab ? '_blank' : null}
       rel={props.newTab ? 'noopener noreferrer' : null}
     >

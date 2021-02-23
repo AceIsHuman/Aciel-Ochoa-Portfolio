@@ -16,7 +16,7 @@ export default () => (
       display: 'inline-block',
       borderRadius: '3px',
     }}
-    src="https://unsplash.com/@ikukevk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+    to="https://unsplash.com/@ikukevk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
     title="Download free do whatever you want high-resolution photos from Kevin Ku"
     newTab
   >
