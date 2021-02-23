@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from './reuseables/Link';
 import { AppBar, Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import GitHub from '../assets/icons/github';
@@ -31,24 +32,16 @@ const NavBar = props => {
   const classes = useStyles();
 
   return (
-    <AppBar position="fixed" style={{ opacity: '0.95'}}>
+    <AppBar position="fixed" style={{ opacity: '0.95' }}>
       <Container className={classes.appBar}>
         <Dev className={classes.icon} />
         <Container className={classes.linkContainer}>
-          <a
-            href="https://github.com/AceIsHuman"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link src="https://github.com/AceIsHuman" newTab>
             <GitHub className={`${classes.icon} + ${classes.link}`} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/aciel-ochoa"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          </Link>
+          <Link src="https://www.linkedin.com/in/aciel-ochoa" newTab>
             <LinkedIn className={`${classes.icon} + ${classes.link}`} />
-          </a>
+          </Link>
         </Container>
       </Container>
     </AppBar>
