@@ -5,7 +5,7 @@ import ContactForm from './ContactForm';
 function Contact() {
   return (
     <Background>
-      <Container>
+      <Container maxWidth="md">
         <h2>Contact</h2>
         <Divider />
         <Content>
@@ -34,7 +34,7 @@ const Content = styled('div')(({ theme }) => ({
   [theme.breakpoints.down('md')]: {
     flexDirection: 'column',
     alignItems: 'center',
-  }
+  },
 }));
 
 const Divider = styled('hr')({
