@@ -16,6 +16,7 @@ const Container = styled(Grid)({
   margin: '0.2rem',
   borderRadius: '0.2rem',
   fontSize: '1.2rem',
+  flexBasis: 'auto',
 });
 
 export default SkillCard;
